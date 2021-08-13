@@ -15,8 +15,6 @@ import android.os.Build;
 import android.provider.Settings;
 import android.widget.Toast;
 
-import androidx.annotation.NonNull;
-import androidx.annotation.RequiresApi;
 import androidx.core.app.ActivityCompat;
 
 import static android.content.Context.WIFI_SERVICE;
@@ -169,33 +167,4 @@ public class UnityUtil /*extends Activity*/{
         getActivity().finish();
         android.os.Process.killProcess(android.os.Process.myPid());
     }
-
-    /**
-     * 安装软件，自动选择安装方式
-     * @param apkFullPath 本地安装包地址
-     * @return
-     */
-    public boolean installApk(String apkFullPath){
-        if (ShellUtils.checkRootPermission()){
-            //PackageUtils.installSilent(getApplicationContext(), apkFullPath);
-            return PackageUtils.installSlient(getActivity(), apkFullPath);
-        }else{
-            return PackageUtils.installNormal(getActivity(), apkFullPath);
-        }
-    }
-
-
-//    @Override
-//    public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
-//        //super.onRequestPermissionsResult(requestCode, permissions, grantResults);
-//        switch (requestCode){
-//            case REQUEST_LOCATION:
-//                if (grantResults[0] != PackageManager.PERMISSION_GRANTED){
-//                    showToast("获取权限失败");
-//                }else{
-//                    getWifiNameInternal();
-//                }
-//                break;
-//        }
-//    }
 }

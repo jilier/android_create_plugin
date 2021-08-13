@@ -7,7 +7,7 @@ android {
     buildToolsVersion "30.0.2"
 
     defaultConfig {
-        applicationId "com.ttt.myapplication"
+        applicationId "com.ttt.create_plugin_for_unity"
         minSdkVersion 16
         targetSdkVersion 30
         versionCode 1

@@ -1,4 +1,4 @@
-package com.ttt.my;
+package com.ttt.util;
 
 import org.junit.Test;
 

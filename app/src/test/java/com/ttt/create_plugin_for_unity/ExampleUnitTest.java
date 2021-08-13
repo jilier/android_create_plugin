@@ -1,4 +1,4 @@
-package com.ttt.myapplication;
+package com.ttt.create_plugin_for_unity;
 
 import org.junit.Test;
 

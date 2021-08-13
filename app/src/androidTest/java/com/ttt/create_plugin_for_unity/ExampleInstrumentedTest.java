@@ -1,4 +1,4 @@
-package com.ttt.my;
+package com.ttt.create_plugin_for_unity;
 
 import android.content.Context;
 
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
     public void useAppContext() {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getInstrumentation().getTargetContext();
-        assertEquals("com.ttt.my.test", appContext.getPackageName());
+        assertEquals("com.ttt.create_plugin_for_unity", appContext.getPackageName());
     }
 }
